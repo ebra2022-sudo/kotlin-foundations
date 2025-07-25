@@ -1,0 +1,79 @@
+Runtime & Execution Model of Kotlin
+Kotlin's compilation targets define the platforms to which Kotlin code is compiled,
+enabling its multiplatform capabilities. These targets dictate the format of the generated binaries,
+the available language constructs, and compatible dependencies.
+Key aspects of Kotlin compilation targets:
+
+Platforms:
+Kotlin supports various targets, including:
+JVM: For applications running on the Java Virtual Machine (e.g., Android, server-side applications).
+JavaScript: For web applications running in browsers or Node.js environments.
+Native: For compiling to native executables for platforms like iOS, macOS, Windows, and Linux, using LLVM.
+Wasm/WASI: For WebAssembly System Interface, enabling server-side applications and running outside the browser.
+
+1. Compiled or Interpreted
+Kotlin is a compiled language.
+
+It compiles to multiple target formats depending on the platform:
+
+JVM Bytecode (for Kotlin/JVM)
+
+JavaScript (for Kotlin/JS)
+
+Native Binary (for Kotlin/Native)
+
+No interpretation at runtime like Python or JavaScript engines (except JS targets run in interpreted JS engines).
+
+2. Target Format
+Kotlin Variant	Target Format
+Kotlin/JVM	JVM Bytecode (.class files)
+Kotlin/JS	JavaScript (ES5/ES6)
+Kotlin/Native	Native binaries (LLVM IR → platform binary)
+
+3. Virtual Machine / Runtime
+Kotlin Variant	Runtime Environment
+Kotlin/JVM	Java Virtual Machine (JVM)
+Kotlin/JS	Runs in JavaScript engines (like V8 in Chrome, SpiderMonkey in Firefox)
+Kotlin/Native	No VM; compiled directly to machine code via LLVM, runs natively
+
+4. Performance Characteristics
+Kotlin/JVM
+High performance, similar to Java.
+
+Benefits from JVM optimizations and JIT compilation.
+
+Large ecosystem and robust standard library.
+
+Kotlin/JS
+Dependent on JS engine performance.
+
+Slower than JVM and Native for compute-intensive tasks.
+
+Kotlin/Native
+Great performance for low-level tasks (like embedded systems or iOS).
+
+Slightly slower than JVM in some cases due to lack of mature GC and optimizations.
+
+5. Startup Time
+Platform	Startup Time
+Kotlin/JVM	Moderate (depends on JVM warm-up and classloading)
+Kotlin/JS	Fast (browser or JS engine dependent)
+Kotlin/Native	Very fast (native apps start almost instantly)
+
+6. Execution Speed
+Platform	Execution Speed
+Kotlin/JVM	High (due to JIT optimizations)
+Kotlin/JS	Medium (depends on JS engine)
+Kotlin/Native	High (close to C/C++ performance for some tasks)
+
+7. Garbage Collection Mechanism
+Platform	GC Mechanism
+Kotlin/JVM	Uses JVM GC (e.g., G1, ZGC, Shenandoah)
+Kotlin/JS	Uses JS engine GC (V8, etc.)
+Kotlin/Native	Custom GC (still evolving; supports concurrent GC since v1.7)
+
+8. Just-In-Time (JIT) or Ahead-of-Time (AOT)
+Platform	Compilation Strategy
+Kotlin/JVM	JIT via JVM
+Kotlin/JS	JS engines often use JIT
+Kotlin/Native	AOT via LLVM
