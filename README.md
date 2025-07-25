@@ -26,7 +26,7 @@ Each topic has its own folder with simple and executable Kotlin files (`.kt`):
 
 | Folder | Topic |
 |--------|-------|
-| `00_hello_world/` | Your first Kotlin program |
+| `hello_world/` | Your first Kotlin program |
 | `01_basics/` | Variables, types, operators |
 | `02_control_flow/` | `if`, `when`, loops |
 | `03_functions/` | Functions, default args, lambdas |
