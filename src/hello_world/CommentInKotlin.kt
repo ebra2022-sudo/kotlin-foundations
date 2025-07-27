@@ -22,7 +22,4 @@ package hello_world
  * | `@param`, `@return`   | Used inside KDoc                               |
  * | IDE Integration       | IntelliJ recognizes and displays KDoc          |
  *
- *
- *
- *
  */
