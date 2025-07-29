@@ -4,9 +4,7 @@ package hello_world
 // to use them effectively.
 
 //  Basic Comments in Kotlin
-
 // for code explanation either for single line or multiline comments
-
 
 // this is KDoc(Kotlin documentation) that is automatically read by the IDE when we hover ove the function or class
 // to explain about it and there are also many keyword annotations describe for ke words like @param(parameter)
