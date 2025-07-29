@@ -1,4 +1,6 @@
 package basics
+
+
 /*
 In Kotlin, variable scoping rules define where a variable is accessible and valid within your code. Understanding
 scopes is crucial for writing clean, bug-free, and maintainable code. Let's walk through variable scoping from basic
