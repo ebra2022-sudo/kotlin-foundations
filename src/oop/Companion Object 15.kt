@@ -2,7 +2,7 @@ package oop
 
 /**
  * --------------------------------------------------------
- * 14_companion_object.kt
+ * 15_companion_object.kt
  * Topic: Companion Object in Kotlin
  * --------------------------------------------------------
  *
