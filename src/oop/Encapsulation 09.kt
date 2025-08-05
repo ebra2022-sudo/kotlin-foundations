@@ -2,7 +2,7 @@ package oop
 
 /**
  * ---------------------------------------------
- * 08_encapsulation.kt
+ * 09_encapsulation.kt
  * Topic: Encapsulation in Kotlin
  * ---------------------------------------------
  *

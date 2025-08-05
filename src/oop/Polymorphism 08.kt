@@ -2,7 +2,7 @@ package oop
 
 /**
  * ---------------------------------------------
- * 07_polymorphism.kt
+ * 08_polymorphism.kt
  * Topic: Polymorphism in Kotlin
  * ---------------------------------------------
  *

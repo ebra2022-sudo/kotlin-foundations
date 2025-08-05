@@ -1,6 +1,7 @@
 package oop
 
 /**
+ * Topic 07: Difference between Interface and Abstract class
  * This file provides a detailed explanation of the differences between an
  * abstract class and an interface in Kotlin, including their use cases,
  * advantages, and code examples.
@@ -107,7 +108,7 @@ class Dog(name: String) : BaseAnimal(name) {
     }
 }
 
-class Cat(name: String) : BaseAnimal(name) {
+class Cat2(name: String) : BaseAnimal(name) {
     override fun makeSound() {
         println("$name says: Meow!")
     }
@@ -134,7 +135,7 @@ fun main() {
     println("The dog's name is ${dog.name} and he is ${dog.age} years old.")
     println()
 
-    val cat = Cat("Whiskers")
+    val cat = Cat2("Whiskers")
     cat.eat()
     cat.makeSound()
     println("The cat's name is ${cat.name}.")
