@@ -2,7 +2,7 @@ package oop
 
 /**
  * ---------------------------------------------
- * 11_enum_class.kt
+ * 12_enum_class.kt
  * Topic: Enum Classes in Kotlin
  * ---------------------------------------------
  *
